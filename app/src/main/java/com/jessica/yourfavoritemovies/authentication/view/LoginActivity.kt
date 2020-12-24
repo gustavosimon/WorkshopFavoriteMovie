@@ -3,8 +3,10 @@ package com.jessica.yourfavoritemovies.authentication.view
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.snackbar.Snackbar
+import com.jessica.yourfavoritemovies.MovieUtil
 import com.jessica.yourfavoritemovies.R
 import com.jessica.yourfavoritemovies.authentication.viewmodel.AuthenticationViewModel
 import com.jessica.yourfavoritemovies.home.view.HomeActivity
@@ -24,16 +26,34 @@ class LoginActivity : AppCompatActivity() {
         bt_login.setOnClickListener {
             val email = etv_email.text.toString()
             val password = etv_password.text.toString()
+            when {
+                MovieUtil.validateEmailPassword(email, password) -> {
+                    viewModel.loginEmailPassword(email, password)
+                }
+                else -> {
+                    showErrorMessage("Login failed")
+                }
+            }
 
-            //TODO - Implementar a verificação por do email e senha e realizar o login
         }
-
         tv_login_register.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))
         }
+
+        initViewModel()
     }
 
-    //TODO - Implementar os observers do viewmodel
+    private fun initViewModel() {
+        viewModel.stateLogin.observe(this, Observer { state ->
+            state?.let {
+                navigateToHome(it)}
+        })
+
+        viewModel.error.observe(this, Observer { error ->
+            error?.let {
+                showErrorMessage(it)}
+        })
+    }
 
     private fun navigateToHome(status: Boolean) {
         when {
