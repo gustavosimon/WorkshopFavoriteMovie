@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "918582291277",
+    "project_id": "workshopfavoritemovie",
+    "storage_bucket": "workshopfavoritemovie.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918582291277:android:7bf3034f5e938793a0e504",
+        "android_client_info": {
+          "package_name": "com.jessica.yourfavoritemovies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918582291277-df1b1ob4bvq0vmcukeph91d60sihc6ak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcsWZpdXnmhVXzGW5LqvsvYoxgtBPgkso"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "918582291277-df1b1ob4bvq0vmcukeph91d60sihc6ak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
