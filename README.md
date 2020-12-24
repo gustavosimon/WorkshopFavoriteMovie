@@ -1,10 +1,11 @@
-# Workshop 
+# Workshop
 
 ### Título: Implementando autenticação e banco de dados utilizando Firebase na sua aplicação Android
 
 Projeto desenvolvido para realização do workshop da [Rocketseat](https://rocketseat.com.br/) no evento [DoWhile2020](https://dowhile.rocketseat.com.br/inscricao?utm_source=google&utm_medium=cpc&utm_term=00+Rocketseat&gclid=CjwKCAiA5IL-BRAzEiwA0lcWYoZ53ALYSmcMpTBUrrX8IH43Rcu_77LiSRX8wGPa7eQ7sqRUVnAY9RoCLGcQAvD_BwE).
 
 A partir de uma aplicação utilizando:
+
 - MVVM;
 - Kotlin;
 - Coroutines;
