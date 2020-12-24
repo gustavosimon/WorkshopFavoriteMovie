@@ -7,7 +7,7 @@ import com.jessica.yourfavoritemovies.Constants.EMPTY_STRING
 import com.jessica.yourfavoritemovies.Constants.UIID_KEY
 
 object MovieUtil {
-    fun saveUserId(context: Context, uiid: String?) {
+    fun setUserId(context: Context, uiid: String?) {
         val preferences = context.getSharedPreferences(APP_KEY, Context.MODE_PRIVATE)
         preferences.edit().putString(UIID_KEY, uiid).apply()
     }
