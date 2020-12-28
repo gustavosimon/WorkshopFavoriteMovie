@@ -75,6 +75,7 @@ dependencies {
     //Firebase
     implementation 'com.google.firebase:firebase-auth'
     implementation 'com.google.firebase:firebase-database:19.5.1'
+    implementation 'com.firebaseui:firebase-ui-auth:6.4.0'
 
     /*#################################### TEST #########################################*/
     // MockWebserver
