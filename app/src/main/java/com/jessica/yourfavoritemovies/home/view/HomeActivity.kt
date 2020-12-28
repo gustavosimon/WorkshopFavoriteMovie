@@ -81,7 +81,7 @@ class HomeActivity : AppCompatActivity() {
     private fun showMessageFavorite(result: Result) {
         Snackbar.make(
             rv_movies,
-            "Movie added - {result.title}",
+            resources.getString(R.string.added_movie, result.title),
             Snackbar.LENGTH_LONG
         ).show()
     }

@@ -49,7 +49,7 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
 
                     when {
                         firebaseResult?.id != null && firebaseResult.id == result.id -> {
-                            var movieAdded = true
+                            movieAdded = true
                         }
                     }
                 }
